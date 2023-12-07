@@ -1,0 +1,101 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2.7rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+
+.captcha {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.capval {
+  border-width: 0.5px;
+  border-color: #cce6ff;
+  border-style: solid;
+  padding: 0.7rem;
+  background-color: #cce6ff;
+  border-radius: 3px;
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: 0.5rem;
+}
+
+.capfield {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1274px) {
+  .row {
+    flex-direction: column;
+    padding: 0rem;
+  }
+  .captcha {
+    flex-direction: column;
+    padding: 0rem;
+    gap: 0rem;
+  }
+  .capfield {
+    margin-top: 0rem;
+  }
+  .field {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .form {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .row {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
